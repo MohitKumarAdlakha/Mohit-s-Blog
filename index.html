@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: #b38b6d;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: #d2b48c;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Magnus Carlsen</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Norwegian Chess Grandmaster</h2>
+      <h5>Magnus Carlsen Chess World Champion, Sep 11, 2022</h5>
+      <p align="center">
+      <img class="img-responsive" src="https://media.cnn.com/api/v1/images/stellar/prod/220927121859-01-magnus-carlsen.jpg?c=original" alt="Magnus" width=300px height=200px>
+  </p>
+      <p>Sven Magnus Øen Carlsen(born 30 November 1990) is a Norwegian chess grandmaster who is the reigning five-time World Chess Champion. He is also a three-time World Rapid Chess Champion and five-time World Blitz Chess Champion. He has held the No. 1 position in the FIDE world chess rankings since 1 July 2011 and trails only Garry Kasparov in time spent as the highest-rated player in the world. His peak rating of 2882 is the highest in history. He also holds the record for the longest unbeaten streak at the elite level in classical chess.</p>
+     <class="card">
+      <h2>Childhood</h2>
+      <h5>Carlsen, aged 13, in Molde giving a simultaneous exhibition July 2004</h5>
+      <div><p align="center">
+    <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Magnus_Carlsen_simultan-dscn0443-2.jpeg/330px-Magnus_Carlsen_simultan-dscn0443-2.jpeg" alt="Magnus" width=300px height=200px>
+  </p> </div>
+      <p>Carlsen was born in Tønsberg, Norway, on 30 November 1990 to Sigrun Øen, a chemical engineer, and Henrik Albert Carlsen, an IT consultant.The family spent one year in Espoo, Finland, and then in Brussels, Belgium, before returning to Norway in 1998, where they lived in Lommedalen, Bærum. They later moved to Haslum.Carlsen showed an aptitude for intellectual challenges at a young age. At two years, he could solve 50-piece jigsaw puzzles; at four, he enjoyed assembling Lego sets with instructions intended for children aged 10–14.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Honours</h2>
+      
+      <p>Carlsen won the Chess Oscars from 2009 to 2013. The Chess Oscar, organised by the Russian chess magazine 64, was awarded to the year's best player according to a worldwide poll of leading chess critics, writers, and journalists, but it was no longer awarded after 2013, as 64 ceased publication.
+
+The Norwegian tabloid Verdens Gang (VG) has awarded Carlsen the "Name of the Year" (Årets navn) twice, in 2009 and 2013.VG also named him "Sportsman of the Year" in 2009.Carlsen has also won the Folkets Idrettspris, a people's choice award from the Norwegian newspaper Dagbladet, in 2009 and 2010.
+
+In 2011, he was awarded the Peer Gynt Prize, a Norwegian prize awarded annually to "a person or institution that has achieved distinction in society".
+
+In 2013, Time magazine named Carlsen one of the 100 most influential people in the world</p>
+    </div>
+    <div class="card">
+      <h3>For more information</h3>
+      <div> <a href="https://en.wikipedia.org/wiki/Magnus_Carlsen">Wikipedia</a></div><br>
+      <div> <a href="https://www.chess.com/players/magnus-carlsen">Chess.com</div><br>
+      <div> <a href="https://ratings.fide.com/profile/1503014">FIDE</div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="footer">
+  <h2>&copy; Mohit's Blog</h2>
+</div>
+
+</body>
+</html>
